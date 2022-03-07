@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        .contenedor {
+            text-align: center;
+        }
+        
+        .cuadrado {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: 1px solid black;
+            display: inline-block;
+            margin: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <h1>WELCOME</h1>
+
+    <div class="contenedor">
+        {% for x in range(0,cantidad): %}
+        <div class="cuadrado" style="background-color:{{nuevocolor}}"></div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>
